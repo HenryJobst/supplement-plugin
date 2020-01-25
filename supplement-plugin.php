@@ -3,8 +3,8 @@
 /*
 Plugin Name: supplement-plugin
 Plugin URI: https://github.com/HenryJobst/supplement-plugin
-Description: This plugin initialise a raw wordpress installation with a bunch of special extra requirements.
-Version: 1.0.0
+Description: This plugin modifies the standard capabilities for some roles.
+Version: 1.0.1
 Author: Henry Jobst
 Author URI: https://github.com/HenryJobst
 Text Domain: supplement-plugin
@@ -35,10 +35,6 @@ defined('ABSPATH') or die;
 
 class SupplementPlugin
 {
-    // categories
-    const BERICHTE = __('Berichte');
-    const NEWS = __('News');
-
     // roles
     const CONTRIBUTOR = 'contributor';
     const EDITOR = 'editor';
@@ -50,8 +46,6 @@ class SupplementPlugin
 
     function activate()
     {
-        $this->create_categories();
-        $this->create_tags();
         $this->set_rights();
         flush_rewrite_rules();
     }
@@ -60,25 +54,6 @@ class SupplementPlugin
     {
         $this->unset_rights();
         flush_rewrite_rules();
-    }
-
-    function create_categories()
-    {
-        $news_id = get_cat_ID(self::NEWS);
-        $report_id = get_cat_ID(self::BERICHTE);
-
-        if ($news_id == 0) {
-            $news_id = wp_create_category(self::NEWS);
-        }
-        if ($report_id == 0) {
-            $report_id = wp_create_category(self::BERICHTE);
-        }
-
-        return array($news_id, $report_id);
-    }
-
-    function create_tags()
-    {
     }
 
     function enable_upload_for_contributor()

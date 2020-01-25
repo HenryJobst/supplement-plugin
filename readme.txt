@@ -2,18 +2,20 @@
 Requires at least: 5.3.2
 License: MIT License
 
-Das Plugin legt Kategorien an, erweitert Rechte.
+This plugin modifies the standard capabilities of some roles.
 
-== Beschreibung ==
+== Description ==
 
-Das Plugin legt die Kategorien News und Berichte an.
+This plugin modifies the standard capabilities of some roles.
 
-Es werden ein paar Rechte erweitert:
+Some rights will be level up:
 
-*   Redakteure dürfen Benutzer anlegen und ändern,
-*   Mitarbeiter dürfen Medien hinzufügen,
+*  editors could create and edit users,
+*  contributors could create and edit media,
 
 == Changelog ==
+= 1.0.1 =
+* remove useless additions
 
 = 1.0.0 =
-* initiale Version
+* initial version
