@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: supplement-plugin
+Plugin Name: Supplement Plugin
 Plugin URI: https://github.com/HenryJobst/supplement-plugin
 Description: This plugin modifies the standard capabilities for some roles.
 Version: 1.0.1
