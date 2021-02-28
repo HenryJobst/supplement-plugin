@@ -4,13 +4,14 @@
 Plugin Name: Supplement Plugin
 Plugin URI: https://github.com/HenryJobst/supplement-plugin
 Description: This plugin modifies the standard capabilities for some roles.
-Version: 1.0.1
+Version: 1.1.0
 Author: Henry Jobst
 Author URI: https://github.com/HenryJobst
 Text Domain: supplement-plugin
 License: MIT License
+Plugin Type: Piklist
 
-Copyright (c) 2020 {Author}
+Copyright (c) 2020-2021 {Author}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
